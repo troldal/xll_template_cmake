@@ -16,7 +16,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_subdirectory(xll)
 
 #==============================================================================
-# Add xlltemplate library and set source file paths
+# Add xll template library and set source file paths
 #==============================================================================
 add_library(
         xlltemplate

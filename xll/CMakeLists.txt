@@ -48,4 +48,4 @@ add_library(
 #==============================================================================
 target_compile_definitions(xll PRIVATE -DUNICODE -D_UNICODE)
 target_compile_options(xll PRIVATE "/J" "/utf-8")
-target_include_directories(xll PUBLIC xll)
+target_include_directories(xll PUBLIC ${CMAKE_CURRENT_LIST_DIR}/xll)
