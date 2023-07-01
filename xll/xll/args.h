@@ -79,12 +79,12 @@ namespace xll {
 		{ }
 
 		// Function
-		Args(cstr type, cstr procedure, cstr functionText)
+		Args(cstr type, cstr procedure, cstr functionText, bool isVisible = true)
 		{
 			key("typeText") = type;
 			key("procedure") = procedure;
 			key("functionText") = functionText;
-			key("macroType") = 1;
+			key("macroType") = (isVisible ? 1 : 0);
 		}
 		// Macro
 		Args(cstr procedure, cstr functionText)

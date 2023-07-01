@@ -76,15 +76,15 @@ XLL_INFO(const char* e, bool force)
 	return XLL_ALERT(e, "Information", XLL_ALERT_INFO, MB_ICONINFORMATION, force);
 }
 
-XLL_CONST(WORD, XLL_ALERT_ERROR, XLL_ALERT_ERROR,
-	"ALERT.LEVEL flag for errors[1].", "XLL", "")
-XLL_CONST(WORD, XLL_ALERT_WARNING, XLL_ALERT_WARNING,
-	"ALERT.LEVEL flag for warnings[2].", "XLL", "")
-XLL_CONST(WORD, XLL_ALERT_INFO, XLL_ALERT_INFO,
-	"ALERT.LEVEL flag for information[4].", "XLL", "")
+//XLL_CONST(WORD, XLL_ALERT_ERROR, XLL_ALERT_ERROR,
+//	"ALERT.LEVEL flag for errors[1].", "XLL", "")
+//XLL_CONST(WORD, XLL_ALERT_WARNING, XLL_ALERT_WARNING,
+//	"ALERT.LEVEL flag for warnings[2].", "XLL", "")
+//XLL_CONST(WORD, XLL_ALERT_INFO, XLL_ALERT_INFO,
+//	"ALERT.LEVEL flag for information[4].", "XLL", "")
 
 AddIn xai_alert_level(
-	Function(XLL_WORD, "xll_alert_level_", "XLL.ALERT.LEVEL")
+	Function(XLL_WORD, "xll_alert_level_", "XLL.ALERT.LEVEL", false)
 	.Arguments({
 		Arg(XLL_LPOPER, "level", "is the alert level mask to set.", "=XLL_ALERT_ERROR()"),
 	})
